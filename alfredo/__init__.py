@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 import cgi
 
 os.path.dirname(__file__)
-DIR = os.path.dirname(__file__)
+DIR = os.path.dirname(__file__) or '.'
 DIR += '/'
 
 app = Flask(__name__)
